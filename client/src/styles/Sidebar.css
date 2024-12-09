@@ -1,0 +1,205 @@
+/* Sidebar Styling */
+.sidebar {
+    position: fixed; /* Fix the sidebar to the left */
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: #2C3E50; /* Dark professional background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Enable scrolling for the content */
+}
+
+/* Sidebar Header - User Profile */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #5bc0de; /* Accent color */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.sidebar-header .username {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center; /* Align icon and text */
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e; /* Darker hover effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+nav ul li a.active {
+    background-color: #5bc0de; /* Active link */
+    color: white;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    margin-top: 458px; /* Push the button to the bottom */
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Admin Dashboard Content Styling */
+.admin-dashboard-container {
+    display: flex;
+    height: 100vh;
+    margin-left: 260px; /* Space for sidebar */
+    overflow-y: auto;
+}
+
+/* Adjustments for dashboard content */
+.admin-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Card Style for Dashboard Widgets */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.card .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card-body .stat {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card .card-body .stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2ecc71;
+}
+
+/* Responsive Cards */
+@media (max-width: 768px) {
+    .admin-dashboard-container {
+        flex-direction: column;
+    }
+
+    .admin-content {
+        margin-left: 0;
+    }
+}
+
+/* Sidebar icon styling */
+.sidebar-icon {
+    margin-right: 15px; /* Space between icon and text */
+    font-size: 1.5rem;  /* Adjust icon size if necessary */
+}
+/* Chart Container Styling */
+.chart-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Export Button Styling */
+.export-button {
+    background-color: #5bc0de;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.export-button:hover {
+    background-color: #3498db;
+}
+
